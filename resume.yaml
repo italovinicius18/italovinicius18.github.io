@@ -1,0 +1,159 @@
+name: Ítalo Vinícius
+headline: Engenheiro de software, focado em engenharia de dados e dataops.
+description:
+  - Engenheiro de software, focado em engenharia de dados e dataops.
+  - Cursando Engenharia de Software na Universidade de Brasília.
+  - Sólidos conhecimentos em Business Intelligence (BI), Analytics e DataOps.
+  - Experiência em desenvolvimento de dashboards e dataflows no Power BI.
+  - Experiência em análise de dados estatísticos e manipulação de dados.
+  - Experiência em GCP (Google Cloud Platform) - BigQuery, Dataproc, Airflow, Nifi.
+  - Experiência em gerenciamento de banco de dados Oracle e desenvolvimento de páginas Oracle APEX.
+  - Experiência em projetos de Machine Learning, visão computacional, análise de dados e desenvolvimento de software em Python e C++.
+  - Habilidades em liderança, trabalho em equipe, resolução de problemas e aprendizado de máquina.
+  - Inglês avançado.
+url: site.com
+repo:
+  url: https://github.com/italovinicius18/resume
+contact:
+  email: email@email.com
+  web:
+    url: site.com
+    title: site.com
+  github: italovinicius18
+  location:
+    title: Brasília, Brasil
+    url: https://en.wikipedia.org/wiki/Brasília
+
+summary: >
+  Engenheiro de software com foco em engenharia de dados e dataops, cursando Engenharia de Software na Universidade de Brasília. Possui sólidos conhecimentos em Business Intelligence (BI), Analytics e DataOps, com experiência em desenvolvimento de dashboards e dataflows no Power BI, análise de dados estatísticos e manipulação de dados. Também tem experiência em GCP (Google Cloud Platform), gerenciamento de banco de dados Oracle e desenvolvimento de páginas Oracle APEX, bem como projetos de Machine Learning, visão computacional, análise de dados e desenvolvimento de software em Python e C++. Possui habilidades em liderança, trabalho em equipe, resolução de problemas e aprendizado de máquina. Além disso, possui fluência em inglês.
+
+# -----------------------------------------------------------------------------
+# Experience
+# -----------------------------------------------------------------------------
+experience:
+  - title: Data engineer
+    org: Embraer
+    start: jul de 2023
+    end: agora
+    location: Remote
+    details:
+      - Desenvolvimento do Projeto Data Ecosystem
+      - Implementação em soluções de Cloud Computing (AWS, GCP)
+      - SQL, Shell Script, Python, Spark
+      - Bases de dados SQL e NoSQL (SQL Server, Oracle, Bancos de dados do Google Cloud, SAP)
+      - Modelagem e Arquitetura de bancos de dados SQL
+      - Ferramentas ETL (AecorSoft Data Integrator, PySpark, Nifi, Apache Airflow)
+      - Ingestão e organização de Zonas de Dados
+      - Construção de Dashboards Analíticos no PowerBI
+      - Administração da capacidade PowerBI
+      - DevOps
+
+  - title: Data intern
+    org: Embraer
+    start: nov de 2021
+    end: jul de 2023
+    location: Remote
+    details:
+      - Administrador da capacidade do Power BI
+      - Criação de dashboards e dataflows no PowerBI
+      - Análise de dados das equipes de TI
+      - Controle de dados relacionais e não-relacionais
+      - Automação de tarefas, KPIs, planilhas, websites e sistemas de gerenciamento
+      - Suporte interno aos clientes
+
+  - title: IT intern
+    org: Tribunal de Contas da União
+    start: jan de 2021
+    end: out de 2021
+    location: Brasília, Brasil
+    details:
+      - Gerenciamento do banco de dados Oracle
+      - Desenvolvimento e gerenciamento de páginas Oracle APEX
+      - Otimização de relações do banco de dados
+      - Desenvolvimento e correção de códigos em JavaScript
+
+  - title: Researcher in computer vision
+    org: Universidade de Brasília
+    start: ago de 2020
+    end: jan de 2021
+    location: Brasília, Brasil
+    details:
+      - Desenvolvimento e pesquisa de modelos preditivos para detecção de faixas na estrada utilizando redes neurais convolucionais e aprendizagem profunda
+
+# -----------------------------------------------------------------------------
+# Projects
+# -----------------------------------------------------------------------------
+projects:
+  - title: Coletaço
+    description: Projeto em grupo para ajudar catadores de materiais recicláveis
+    tech:
+      - JavaScript
+      - React Native
+      - ExpressJS
+    github:
+      - https://github.com/italovinicius18/Coletaco
+
+  - title: Stag.io
+    description: Projeto em grupo para ajudar catadores de materiais recicláveis
+    tech:
+      - JavaScript
+      - React Native
+      - ExpressJS
+    github:
+      - https://github.com/UnBArqDsw2021-2/2021.2_G3_stag.io_Frontend
+      - https://github.com/UnBArqDsw2021-2/2021.2_G3_stag.io_Backend
+
+  - title: Análise de vendas de carros
+    description: Análise de vendas de carros de uma loja específica
+    tech:
+      - Python
+    github:
+      - https://github.com/italovinicius18/DataScience/blob/main/Cars%20price%20prediction/notebook.ipynb
+
+  - title: Análise dos reviews de usuários
+    description: Análise de feedback de usuários sobre um modelo de moto
+    tech:
+      - Python
+    github:
+      - https://github.com/italovinicius18/DataScience/tree/main/Moped%20Reviews
+
+  - title: Detecção e análise de placas de trânsito
+    description: Análise de placas de trânsito no simulador CARLA utilizando modelos YoLo e Tesseract
+    tech:
+      - Python
+    github:
+      - https://github.com/guilherme-mendes/TEES-Autonomous-vehicles
+
+  - title: Análise do comportamento de um eletrodoméstico
+    description: Avaliação do funcionamento de um eletrodoméstico com base em dados coletados do motor
+    tech:
+      - Python
+    github:
+      - https://github.com/italovinicius18/DesafioTractian/blob/main/Tractian.ipynb
+
+  - title: Pipeline de dados e análise de sentimento
+    description: Consumo de dados de mensagens do Telegram, processamento em streaming com Kafka e Spark, análise de sentimento e armazenamento em Elasticsearch
+    tech:
+      - Python
+    github:
+      - https://github.com/italovinicius18/PSPD/tree/main/ProjetoFinal/B
+
+# -----------------------------------------------------------------------------
+# Skills
+# -----------------------------------------------------------------------------
+skills:
+  products:
+    - Business Intelligence (BI)
+    - Analytics
+    - DataOps
+    - Power BI
+    - GCP (Google Cloud Platform) - BigQuery, Dataproc, Airflow, Nifi
+    - Oracle Database
+    - Machine Learning
+    - Python
+    - C++
+    - Leadership
+    - Teamwork
+    - Problem Solving
+    - Machine Learning
+    - English (Advanced)
