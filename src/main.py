@@ -26,7 +26,7 @@ class YamlParser:
 
         html_content = template.render(data=data, styles=styles)
 
-        output_path = os.path.join("dist", output_file)
+        output_path = os.path.join(output_file)
         with open(output_path, "w", encoding="utf-8") as file:
             file.write(html_content)
 
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     yaml_parser = YamlParser(os.path.join("resume.yaml"))
 
     # Generate HTML
-    yaml_parser.generate_html("template.html", "resume.html")
+    yaml_parser.generate_html("template.html", "index.html")
 
     # # Generate Markdown
     # yaml_parser.generate_markdown("resume.md")

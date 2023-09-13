@@ -1,13 +1,12 @@
-name: Run python script and push to repo the static files
+name: Run python script, generate resume, push to repo gh-pages
 
 on:
   push:
     branches:
       - main
-      - develop
 
 jobs:
-  build:
+  generate-resume:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -26,6 +25,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
+          git checkout -b gh-pages
           git add .
           git commit -m "generated resume"
-          git push
+          git push --set-upstream origin gh-pages -f
