@@ -1,16 +1,16 @@
 name: Ítalo Vinícius
-headline: Engenheiro de software, focado em engenharia de dados e dataops.
+headline: Software Engineer, focused on data engineering and dataops.
 description:
-  - Engenheiro de software, focado em engenharia de dados e dataops.
-  - Cursando Engenharia de Software na Universidade de Brasília.
-  - Sólidos conhecimentos em Business Intelligence (BI), Analytics e DataOps.
-  - Experiência em desenvolvimento de dashboards e dataflows no Power BI.
-  - Experiência em análise de dados estatísticos e manipulação de dados.
-  - Experiência em GCP (Google Cloud Platform) - BigQuery, Dataproc, Airflow, Nifi.
-  - Experiência em gerenciamento de banco de dados Oracle e desenvolvimento de páginas Oracle APEX.
-  - Experiência em projetos de Machine Learning, visão computacional, análise de dados e desenvolvimento de software em Python e C++.
-  - Habilidades em liderança, trabalho em equipe, resolução de problemas e aprendizado de máquina.
-  - Inglês avançado.
+  - Software Engineer, focused on data engineering and dataops.
+  - Currently pursuing a degree in Software Engineering at the University of Brasília.
+  - Strong knowledge in Business Intelligence (BI), Analytics, and DataOps.
+  - Experience in developing dashboards and dataflows in Power BI.
+  - Experience in statistical data analysis and data manipulation.
+  - Experience with GCP (Google Cloud Platform) - BigQuery, Dataproc, Airflow, Nifi.
+  - Experience in Oracle database management and Oracle APEX page development.
+  - Experience in Machine Learning projects, computer vision, data analysis, and software development in Python and C++.
+  - Skills in leadership, teamwork, problem-solving, and machine learning.
+  - Advanced English proficiency.
 url: italovinicius18.github.io/resume/
 repo:
   url: https://github.com/italovinicius18/resume
@@ -21,71 +21,71 @@ contact:
     title: italovinicius18.github.io/resume/
   github: italovinicius18
   location:
-    title: Brasília, Brasil
+    title: Brasília, Brazil
     url: https://en.wikipedia.org/wiki/Brasília
 
 summary: >
-  Engenheiro de software com foco em engenharia de dados e dataops, cursando Engenharia de Software na Universidade de Brasília. Possui sólidos conhecimentos em Business Intelligence (BI), Analytics e DataOps, com experiência em desenvolvimento de dashboards e dataflows no Power BI, análise de dados estatísticos e manipulação de dados. Também tem experiência em GCP (Google Cloud Platform), gerenciamento de banco de dados Oracle e desenvolvimento de páginas Oracle APEX, bem como projetos de Machine Learning, visão computacional, análise de dados e desenvolvimento de software em Python e C++. Possui habilidades em liderança, trabalho em equipe, resolução de problemas e aprendizado de máquina. Além disso, possui fluência em inglês.
+  Software engineer with a focus on data engineering and dataops, currently pursuing a degree in Software Engineering at the University of Brasília. Possesses strong knowledge in Business Intelligence (BI), Analytics, and DataOps, with experience in developing dashboards and dataflows in Power BI, statistical data analysis, and data manipulation. Also has experience with GCP (Google Cloud Platform), Oracle database management, and Oracle APEX page development, as well as projects in Machine Learning, computer vision, data analysis, and software development in Python and C++. Has skills in leadership, teamwork, problem-solving, and machine learning. Additionally, has advanced English proficiency.
 
 # -----------------------------------------------------------------------------
 # Experience
 # -----------------------------------------------------------------------------
 experience:
-  - title: Data engineer
+  - title: Data Engineer
     org: Embraer
-    start: jul de 2023
-    end: agora
+    start: Jul 2023
+    end: Present
     location: Remote
     details:
-      - Desenvolvimento do Projeto Data Ecosystem
-      - Implementação em soluções de Cloud Computing (AWS, GCP)
+      - Development of the Data Ecosystem Project
+      - Implementation in Cloud Computing solutions (AWS, GCP)
       - SQL, Shell Script, Python, Spark
-      - Bases de dados SQL e NoSQL (SQL Server, Oracle, Bancos de dados do Google Cloud, SAP)
-      - Modelagem e Arquitetura de bancos de dados SQL
-      - Ferramentas ETL (AecorSoft Data Integrator, PySpark, Nifi, Apache Airflow)
-      - Ingestão e organização de Zonas de Dados
-      - Construção de Dashboards Analíticos no PowerBI
-      - Administração da capacidade PowerBI
+      - SQL and NoSQL databases (SQL Server, Oracle, Google Cloud databases, SAP)
+      - SQL database modeling and architecture
+      - ETL Tools (AecorSoft Data Integrator, PySpark, Nifi, Apache Airflow)
+      - Data Zone Ingestion and organization
+      - Building Analytical Dashboards in Power BI
+      - Power BI capacity administration
       - DevOps
 
-  - title: Data intern
+  - title: Data Intern
     org: Embraer
-    start: nov de 2021
-    end: jul de 2023
+    start: Nov 2021
+    end: Jul 2023
     location: Remote
     details:
-      - Administrador da capacidade do Power BI
-      - Criação de dashboards e dataflows no PowerBI
-      - Análise de dados das equipes de TI
-      - Controle de dados relacionais e não-relacionais
-      - Automação de tarefas, KPIs, planilhas, websites e sistemas de gerenciamento
-      - Suporte interno aos clientes
+      - Power BI capacity administrator
+      - Creation of dashboards and dataflows in Power BI
+      - Analysis of data from IT teams
+      - Control of relational and non-relational data
+      - Automation of tasks, KPIs, spreadsheets, websites, and management systems
+      - Internal customer support
 
-  - title: IT intern
+  - title: IT Intern
     org: Tribunal de Contas da União
-    start: jan de 2021
-    end: out de 2021
-    location: Brasília, Brasil
+    start: Jan 2021
+    end: Oct 2021
+    location: Brasília, Brazil
     details:
-      - Gerenciamento do banco de dados Oracle
-      - Desenvolvimento e gerenciamento de páginas Oracle APEX
-      - Otimização de relações do banco de dados
-      - Desenvolvimento e correção de códigos em JavaScript
+      - Oracle database management
+      - Development and management of Oracle APEX pages
+      - Optimization of database relationships
+      - Development and correction of JavaScript code
 
-  - title: Researcher in computer vision
-    org: Universidade de Brasília
-    start: ago de 2020
-    end: jan de 2021
-    location: Brasília, Brasil
+  - title: Researcher in Computer Vision
+    org: University of Brasília
+    start: Aug 2020
+    end: Jan 2021
+    location: Brasília, Brazil
     details:
-      - Desenvolvimento e pesquisa de modelos preditivos para detecção de faixas na estrada utilizando redes neurais convolucionais e aprendizagem profunda
+      - Development and research of predictive models for road lane detection using convolutional neural networks and deep learning
 
 # -----------------------------------------------------------------------------
 # Projects
 # -----------------------------------------------------------------------------
 projects:
   - title: Coletaço
-    description: Projeto em grupo para ajudar catadores de materiais recicláveis
+    description: Group project to assist recyclable material collectors
     tech:
       - JavaScript
       - React Native
@@ -94,7 +94,7 @@ projects:
       - https://github.com/italovinicius18/Coletaco
 
   - title: Stag.io
-    description: Projeto em grupo para ajudar catadores de materiais recicláveis
+    description: Group project to assist recyclable material collectors
     tech:
       - JavaScript
       - React Native
@@ -103,36 +103,36 @@ projects:
       - https://github.com/UnBArqDsw2021-2/2021.2_G3_stag.io_Frontend
       - https://github.com/UnBArqDsw2021-2/2021.2_G3_stag.io_Backend
 
-  - title: Análise de vendas de carros
-    description: Análise de vendas de carros de uma loja específica
+  - title: Car Sales Analysis
+    description: Analysis of car sales from a specific dealership
     tech:
       - Python
     github:
       - https://github.com/italovinicius18/DataScience/blob/main/Cars%20price%20prediction/notebook.ipynb
 
-  - title: Análise dos reviews de usuários
-    description: Análise de feedback de usuários sobre um modelo de moto
+  - title: User Reviews Analysis
+    description: Analysis of user feedback on a motorcycle model
     tech:
       - Python
     github:
       - https://github.com/italovinicius18/DataScience/tree/main/Moped%20Reviews
 
-  - title: Detecção e análise de placas de trânsito
-    description: Análise de placas de trânsito no simulador CARLA utilizando modelos YoLo e Tesseract
+  - title: Traffic Sign Detection and Analysis
+    description: Analysis of traffic signs in the CARLA simulator using YoLo and Tesseract models
     tech:
       - Python
     github:
       - https://github.com/guilherme-mendes/TEES-Autonomous-vehicles
 
-  - title: Análise do comportamento de um eletrodoméstico
-    description: Avaliação do funcionamento de um eletrodoméstico com base em dados coletados do motor
+  - title: Appliance Behavior Analysis
+    description: Evaluation of the performance of an appliance based on data collected from the motor
     tech:
       - Python
     github:
       - https://github.com/italovinicius18/DesafioTractian/blob/main/Tractian.ipynb
 
-  - title: Pipeline de dados e análise de sentimento
-    description: Consumo de dados de mensagens do Telegram, processamento em streaming com Kafka e Spark, análise de sentimento e armazenamento em Elasticsearch
+  - title: Data Pipeline and Sentiment Analysis
+    description: Consumption of Telegram message data, streaming processing with Kafka and Spark, sentiment analysis, and storage in Elasticsearch
     tech:
       - Python
     github:
