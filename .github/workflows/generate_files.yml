@@ -22,11 +22,30 @@ jobs:
       - name: Run python script
         run: |
           python src/main.py
-      - name: Commit files
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git checkout -b gh-pages
-          git add dist/ index.html -f
-          git commit -m "generated resume"
-          git push --set-upstream origin gh-pages -f
+
+      - name: Generate PDF Document
+        uses: browser-actions/setup-chrome@latest
+      - run: >
+            chrome
+            -headless
+            -disable-gpu
+            --no-sandbox
+            --print-to-pdf=dist/resume.pdf
+            --print-to-pdf-no-header
+            index.html
+  
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: pdf
+          path: |
+            dist/resume.pdf
+
+      # - name: Commit files
+      #   run: |
+      #     git config user.name github-actions
+      #     git config user.email github-actions@github.com
+      #     git checkout -b gh-pages
+      #     git add dist/ index.html -f
+      #     git commit -m "generated resume"
+      #     git push --set-upstream origin gh-pages -f
