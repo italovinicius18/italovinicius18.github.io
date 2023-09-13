@@ -7,26 +7,24 @@
     <title>{{ data['name'] }}'s Resume</title>
     <base href="{{ data['url'] }}/" />
     <link rel="canonical" href="{{ data['url'] }}" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <meta name="description" content="{{ data['headline'] }}" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
 
     <!-- Open Graph -->
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="pt_BR" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{{ data['name'] }}'s Resume" />
     <meta property="og:description" content="{{ data['headline'] }}" />
     <meta property="og:url" content="{{ data['url'] }}" />
     <meta property="og:site_name" content="{{ data['name'] }}'s Resume" />
-    <meta property="og:image" content="{{ data['url'] }}/assets/img/resume-og.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel=icon href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/svgs/solid/i.svg>
     
     <style type="text/css">
         {{ styles }}
@@ -45,23 +43,28 @@
                 <div id="contact_details">
                     <ul>
                         <li>
-                            <a
-                                href="mailto:{{ data['contact']['email'] }}">{{ data['contact']['email'] }}</a>
+                            <i class="ph ph-envelope"></i>
+                            <a href="mailto:{{ data['contact']['email'] }}">
+                                {{ data['contact']['email'] }}
+                            </a>
                         </li>
                         {% if 'web' in data['contact'] %}
                         <li>
+                            <i class="ph ph-globe-hemisphere-west"></i>
                             <a
                                 href="{{ data['contact']['web']['url'] }}">{{ data['contact']['web']['title'] }}</a>
                         </li>
                         {% endif %}
                         {% if 'github' in data['contact'] %}
                         <li>
+                            <i class="ph ph-github-logo"></i>
                             <a
                                 href="https://github.com/{{ data['contact']['github'] }}">github.com/{{ data['contact']['github'] }}</a>
                         </li>
                         {% endif %}
                         {% if 'location' in data['contact'] %}
                         <li>
+                            <i class="ph ph-map-pin"></i>
                             <a
                                 href="{{ data['contact']['location']['url'] }}">{{ data['contact']['location']['title'] }}</a>
                         </li>
@@ -98,7 +101,7 @@
             <section>
                 <h2 id="summary">Summary</h2>
                 <div class="section_content">
-                    <p>{{ data['summary'] }}</p>
+                    <p align="justify">{{ data['summary'] }}</p>
                 </div>
                 <div class="clear"></div>
             </section>

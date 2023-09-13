@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     color: #5A595A;
-    background: #408663;
+    background: #140D4F;
   }
   
   header {
@@ -114,6 +114,8 @@
   }
   
   #contact_details ul li {
+    display: flex;
+    align-items: center;
     line-height: 1.5;
   }
   
