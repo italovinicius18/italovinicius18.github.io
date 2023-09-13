@@ -23,10 +23,8 @@ contact:
   location:
     title: Brasília, Brazil
     url: https://en.wikipedia.org/wiki/Brasília
-
 summary: >
   Software engineer with a focus on data engineering and dataops, currently pursuing a degree in Software Engineering at the University of Brasília. Possesses strong knowledge in Business Intelligence (BI), Analytics, and DataOps, with experience in developing dashboards and dataflows in Power BI, statistical data analysis, and data manipulation. Also has experience with GCP (Google Cloud Platform), Oracle database management, and Oracle APEX page development, as well as projects in Machine Learning, computer vision, data analysis, and software development in Python and C++. Has skills in leadership, teamwork, problem-solving, and machine learning. Additionally, has advanced English proficiency.
-
 # -----------------------------------------------------------------------------
 # Experience
 # -----------------------------------------------------------------------------
@@ -79,6 +77,17 @@ experience:
     location: Brasília, Brazil
     details:
       - Development and research of predictive models for road lane detection using convolutional neural networks and deep learning
+
+  - title: Software Engineer (Temporary)
+    org: Polícia Civil do Estado de Goiás
+    start: Mar 2023
+    end: Jul 2023
+    location: Brasília, Distrito Federal, Brazil
+    details:
+      - Developer of the Schedula project using agile methodologies such as Lean Inception and Scrum
+      - Collaborated with clients on system requirements and validation of results
+      - Conducted training for students in software development methods, covering Git/Github, Docker, and Front-end/Back-end
+      - Proficient in communication, Docker, CI/CD, Typescript, React, Nestjs, agile methodologies, software requirements, Heroku, and PostgreSQL
 
 # -----------------------------------------------------------------------------
 # Projects
