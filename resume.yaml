@@ -30,9 +30,28 @@ summary: >
 # -----------------------------------------------------------------------------
 experience:
   - title: Data Engineer
+    org: A3Data
+    start: Nov 2023
+    end: Present
+    location: Remote
+    details:
+      - Criação de diferentes arquiteturas de dados
+      - Desenvolvimento de pipelines de dados
+      - Implementação de soluções em Cloud Computing (AWS, GCP)
+      - SQL, Shell Script, Python, Spark
+      - Bancos de dados SQL e NoSQL (RDS, S3, Redshift, Athena, BigQuery)
+      - Modelagem e arquitetura de banco de dados SQL
+      - Ferramentas de ETL (PySpark, Nifi, Apache Airflow)
+      - Implementação de Data Lake e Data Warehouse
+      - Implementação de ferramentas de catalogação de dados (DataHub, OpenMetadata, Glue)
+      - Implementação de ferramentas de qualidade de dados (Great Expectations, SODA)
+      - Foco em governança de dados
+
+      
+  - title: Data Engineer
     org: Embraer
     start: Jul 2023
-    end: Present
+    end: Nov 2023
     location: Remote
     details:
       - Development of the Data Ecosystem Project
@@ -45,6 +64,17 @@ experience:
       - Building Analytical Dashboards in Power BI
       - Power BI capacity administration
       - DevOps
+
+  - title: Software Engineer (Temporary)
+    org: Polícia Civil do Estado de Goiás
+    start: Mar 2023
+    end: Jul 2023
+    location: Remote
+    details:
+      - Developer of the Schedula project using agile methodologies such as Lean Inception, Scrum, XP
+      - Collaborated with clients on system requirements and validation of results
+      - Conducted training for students in software development methods, covering Git/Github, Docker, and Front-end/Back-end
+      - Proficient in communication, Docker, CI/CD, Typescript, Vue, React, Nestjs, agile methodologies, software requirements, Heroku, and PostgreSQL
 
   - title: Data Intern
     org: Embraer
@@ -78,16 +108,6 @@ experience:
     details:
       - Development and research of predictive models for road lane detection using convolutional neural networks and deep learning
 
-  - title: Software Engineer (Temporary)
-    org: Polícia Civil do Estado de Goiás
-    start: Mar 2023
-    end: Jul 2023
-    location: Brasília, Distrito Federal, Brazil
-    details:
-      - Developer of the Schedula project using agile methodologies such as Lean Inception and Scrum
-      - Collaborated with clients on system requirements and validation of results
-      - Conducted training for students in software development methods, covering Git/Github, Docker, and Front-end/Back-end
-      - Proficient in communication, Docker, CI/CD, Typescript, React, Nestjs, agile methodologies, software requirements, Heroku, and PostgreSQL
 
 # -----------------------------------------------------------------------------
 # Projects
@@ -111,6 +131,25 @@ projects:
     github:
       - https://github.com/UnBArqDsw2021-2/2021.2_G3_stag.io_Frontend
       - https://github.com/UnBArqDsw2021-2/2021.2_G3_stag.io_Backend
+
+  - title: Resume
+    description: Build a website resume using a file in YAML format
+    tech:
+      - Python
+      - Jinja2
+      - YAML
+    github:
+      - https://github.com/italovinicius18/resume
+
+  - title: Ludo.io
+    description: A simple ludo game using React, Express, and Socket.io
+    tech:
+      - JavaScript
+      - React
+      - ExpressJS
+      - Socket.io
+    github:
+      - https://github.com/italovinicius18/ludo.io
 
   - title: Car Sales Analysis
     description: Analysis of car sales from a specific dealership
