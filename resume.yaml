@@ -192,17 +192,22 @@ projects:
 # -----------------------------------------------------------------------------
 skills:
   products:
-    - Business Intelligence (BI)
+    - GCP (Google Cloud Platform) - BigQuery, Dataproc, Airflow, Nifi
+    - AWS - S3, Redshift, Athena, Glue, EMR, Lambda, CloudWatch, CloudTrail, IAM, EC2
+    - JavaScript
+    - TypeScript
+    - React
+    - ExpressJS
+    - NestJS
+    - TypeORM
+    - Sequelize
+    - PostgreSQL
+    - Oracle Database
     - Analytics
     - DataOps
-    - Power BI
-    - GCP (Google Cloud Platform) - BigQuery, Dataproc, Airflow, Nifi
-    - Oracle Database
-    - Machine Learning
     - Python
     - C++
     - Leadership
     - Teamwork
     - Problem Solving
-    - Machine Learning
-    - English (Advanced)
+    - English
