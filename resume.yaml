@@ -30,6 +30,22 @@ summary: >
 # Experience
 # -----------------------------------------------------------------------------
 experience:
+  - title: Software engineer
+    org: Ministério da Saúde
+    start: Jan 2023
+    end: Present
+    location: Remote
+    details:
+      - User interface development in VueJS and React.
+      - Backend server implementation with Fastify in NodeJS environment.
+      - Handling and processing large-scale data using PySpark.
+      - Participation in requirement elicitation and translation into software specifications.
+      - Development of data pipelines and integration with PostgreSQL, DuckDB, and AWS.
+      - DevOps practices for software lifecycle automation.
+      - Configuration and management of PostgreSQL databases on AWS.
+      - Collaboration with multidisciplinary teams to ensure data security.
+      - Development of real-time reporting systems and dashboards.
+
   - title: Data Engineer
     org: A3Data
     start: Nov 2023
