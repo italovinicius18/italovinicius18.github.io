@@ -36,18 +36,19 @@ experience:
     end: Present
     location: Remote
     details:
-      - Criação de diferentes arquiteturas de dados
-      - Desenvolvimento de pipelines de dados
-      - Implementação de soluções em Cloud Computing (AWS, GCP)
+      - Implementation of different data architectures
+      - Development of data pipelines (Airflow and Glue Workflows)
+      - Implementing Cloud Computing solutions (AWS, GCP)
       - SQL, Shell Script, Python, Spark
-      - Bancos de dados SQL e NoSQL (RDS, S3, Redshift, Athena, BigQuery)
-      - Modelagem e arquitetura de banco de dados SQL
-      - Ferramentas de ETL (PySpark, Nifi, Apache Airflow)
-      - Implementação de Data Lake e Data Warehouse
-      - Implementação de ferramentas de catalogação de dados (DataHub, OpenMetadata, Glue)
-      - Implementação de ferramentas de qualidade de dados (Great Expectations, SODA)
-      - Foco em governança de dados
-
+      - SQL and NoSQL databases (RDS, S3, Redshift, Athena, BigQuery)
+      - SQL database modeling and architecture
+      - ETL tools (PySpark, Nifi, Apache Airflow)
+      - Data Lake and Data Warehouse implementation
+      - Implementation of data cataloging tools (DataHub, OpenMetadata, Glue)
+      - Implementation of data quality tools (Great Expectations, SODA)
+      - Focus on data governance
+      - Development of Terraform scripts for infrastructure as code
+      - Development of CI/CD pipelines and services (Airflow and Grafana)
       
   - title: Data Engineer
     org: Embraer
