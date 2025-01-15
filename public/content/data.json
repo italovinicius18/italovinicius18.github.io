@@ -1,0 +1,223 @@
+{
+  "info": {
+    "name": "Ítalo Guimarães",
+    "title": {
+      "en": "Data Engineering | Software Engineering",
+      "pt": "Engenharia de Dados | Engenharia de Software"
+    },
+    "logo": "i.ico",
+    "location": {
+      "en": "Brasília, DF, Brazil",
+      "pt": "Brasília, DF, Brasil"
+    },
+    "email": "italovinicius19981998@gmail.com",
+    "linkedin": "linkedin.com/in/italovinicius18",
+    "github": "github.com/italovinicius18"
+  },
+  "experiences": [
+    {
+      "companyName": "TRACTIAN",
+      "logoUrl": "tractian.png",
+      "role": {
+        "en": "Analytics Engineer",
+        "pt": "Engenheiro(a) de Analytics"
+      },
+      "employmentType": {
+        "en": "Full-time",
+        "pt": "Tempo integral"
+      },
+      "startDate": {
+        "en": "Oct 2024",
+        "pt": "out de 2024"
+      },
+      "endDate": {
+        "en": "Present",
+        "pt": "o momento"
+      },
+      "duration": {
+        "en": "4 months",
+        "pt": "4 meses"
+      },
+      "location": {
+        "en": "Indianópolis, São Paulo, Brazil · Remote",
+        "pt": "Indianópolis, São Paulo, São Paulo, Brasil · Remota"
+      },
+      "description": [
+        {
+          "en": "Skills: Data analysis · Data engineering",
+          "pt": "Competências: Análise de dados · Engenharia de dados"
+        }
+      ],
+      "tags": ["data-engineer"]
+    },
+    {
+      "companyName": "Ministério da Saúde",
+      "logoUrl": "ms.png",
+      "role": {
+        "en": "Software Engineer",
+        "pt": "Engenheiro de software"
+      },
+      "employmentType": {
+        "en": "Temporary",
+        "pt": "Temporário"
+      },
+      "startDate": {
+        "en": "Jan 2024",
+        "pt": "jan de 2024"
+      },
+      "endDate": {
+        "en": "Present",
+        "pt": "o momento"
+      },
+      "duration": {
+        "en": "1 year 1 month",
+        "pt": "1 ano 1 mês"
+      },
+      "location": {
+        "en": "Brasília, Federal District, Brazil · Remote",
+        "pt": "Brasília, Distrito Federal, Brasil · Remota"
+      },
+      "description": [
+        {
+          "en": "Implementation of gov.br platforms such as the Strategic Management Support Room (SAGE)",
+          "pt": "Implementação de plataformas gov.br como a Sala de apoio à Gestão Estratégica (SAGE)"
+        },
+        {
+          "en": "Development of user interfaces in VueJS and React",
+          "pt": "Desenvolvimento de interfaces de usuário em VueJS e React"
+        },
+        {
+          "en": "Backend implementation with Fastify in a NodeJS environment",
+          "pt": "Implementação de backend com Fastify em ambiente NodeJS"
+        }
+      ],
+      "tags": ["software-engineer"]
+    },
+    {
+      "companyName": "A3Data",
+      "logoUrl": "a3data.png",
+      "role": {
+        "en": "Data Engineer",
+        "pt": "Engenheiro de dados"
+      },
+      "employmentType": {
+        "en": "Full-time",
+        "pt": "Tempo integral"
+      },
+      "startDate": {
+        "en": "Nov 2023",
+        "pt": "nov de 2023"
+      },
+      "endDate": {
+        "en": "Oct 2024",
+        "pt": "out de 2024"
+      },
+      "duration": {
+        "en": "1 year",
+        "pt": "1 ano"
+      },
+      "location": {
+        "en": "Belo Horizonte, Minas Gerais, Brazil · Remote",
+        "pt": "Belo Horizonte, Minas Gerais, Brasil · Remota"
+      },
+      "description": [
+        {
+          "en": "Development of Terraform scripts for AWS and Kubernetes",
+          "pt": "Desenvolvimento de scripts Terraform para serviços AWS e Kubernetes"
+        },
+        {
+          "en": "Data pipelines with Airflow and Glue Workflows",
+          "pt": "Pipelines de dados com Airflow e Glue Workflows"
+        }
+      ],
+      "tags": ["data-engineer"]
+    },
+    {
+      "companyName": "Embraer",
+      "logoUrl": "embraer.png",
+      "role": {
+        "en": "Software Engineer",
+        "pt": "Engenheiro de software"
+      },
+      "employmentType": {
+        "en": "Internship",
+        "pt": "Estágio"
+      },
+      "startDate": {
+        "en": "Nov 2021",
+        "pt": "nov de 2021"
+      },
+      "endDate": {
+        "en": "Jul 2023",
+        "pt": "jul de 2023"
+      },
+      "duration": {
+        "en": "1 year 9 months",
+        "pt": "1 ano 9 meses"
+      },
+      "location": {
+        "en": "São José dos Campos, São Paulo, Brazil",
+        "pt": "São José dos Campos, São Paulo, Brasil"
+      },
+      "description": [
+        {
+          "en": "Power BI capacity administrator",
+          "pt": "Administrador da capacidade do Power BI"
+        },
+        {
+          "en": "Dashboard creation in PowerBI",
+          "pt": "Criação de dashboards no PowerBI"
+        }
+      ],
+      "tags": ["software-engineer"]
+    }
+  ],
+  "certifications": [
+    {
+      "name": {
+        "en": "AWS Certified Cloud Practitioner",
+        "pt": "AWS Certified Cloud Practitioner"
+      },
+      "issuer": {
+        "en": "Amazon Web Services (AWS)",
+        "pt": "Amazon Web Services (AWS)"
+      },
+      "tags": ["data-engineer", "software-engineer"]
+    },
+    {
+      "name": {
+        "en": "Google Data Analytics Professional Certificate",
+        "pt": "Certificado Profissional de Análise de Dados do Google"
+      },
+      "issuer": {
+        "en": "Coursera",
+        "pt": "Coursera"
+      },
+      "tags": ["data-engineer"]
+    }
+  ],
+  "projects": [
+    {
+      "title": {
+        "en": "A3Data - Hypofarma Client",
+        "pt": "A3Data - Cliente Hypofarma"
+      },
+      "description": {
+        "en": "Data architecture, AWS cloud solutions, Terraform, GitLab CI/CD",
+        "pt": "Arquitetura de dados, soluções em nuvem AWS, Terraform, GitLab CI/CD"
+      },
+      "tags": ["data-engineer"]
+    },
+    {
+      "title": {
+        "en": "Ministério da Saúde - SAGE",
+        "pt": "Ministério da Saúde - SAGE"
+      },
+      "description": {
+        "en": "Implementation of strategic management support platform with NodeJS, VueJS",
+        "pt": "Implementação de plataforma de apoio à gestão estratégica com NodeJS, VueJS"
+      },
+      "tags": ["software-engineer"]
+    }
+  ]
+}
