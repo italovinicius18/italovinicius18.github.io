@@ -208,6 +208,8 @@ section h3 {
   top: 0;
   z-index: 1000; /* Garante que a Navbar fique acima de outros elementos */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1%;
+  border-radius: 4px;
 }
 
 .navbar-logo h2 {

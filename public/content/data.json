@@ -184,6 +184,7 @@
         }
       ],
       "tags": [
+        "data-engineer",
         "data-engineer"
       ]
     },
@@ -195,8 +196,8 @@
         "pt": "Engenheiro de software"
       },
       "employmentType": {
-        "en": "Internship",
-        "pt": "estágio"
+        "en": "Full-time",
+        "pt": "Tempo integral"
       },
       "startDate": "2021-11-01",
       "endDate": "2023-07-01",
@@ -248,7 +249,8 @@
         }
       ],
       "tags": [
-        "software-engineer"
+        "software-engineer",
+        "data-engineer"
       ]
     },
     {
