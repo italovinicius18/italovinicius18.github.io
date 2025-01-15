@@ -1,8 +1,9 @@
-// App.tsx
+// src/App.tsx
 
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 
+import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Experience from './components/Experience';
 import Project from './components/Project';
@@ -12,19 +13,19 @@ import type {
   DataJson,
   CertificationType,
   ExperienceType,
-  ProjectType
+  ProjectType,
 } from './types';
 
 import './styles.css';
 
 function App() {
-  // 1) Tipar o estado `data` como `DataJson | null`
+  // Tipagem do estado `data` como `DataJson | null`
   const [data, setData] = useState<DataJson | null>(null);
 
-  // 2) Tipar o estado `currentLanguage` mais estritamente
+  // Tipagem do estado `currentLanguage` como 'en' | 'pt'
   const [currentLanguage, setCurrentLanguage] = useState<'en' | 'pt'>('en');
 
-  // 3) `filterTag` pode ser string ou null
+  // Tipagem de `filterTag` como string ou null
   const [filterTag, setFilterTag] = useState<string | null>(null);
   // "data-engineer", "software-engineer" ou null
 
@@ -32,7 +33,6 @@ function App() {
     fetch('/content/data.json')
       .then((res) => res.json())
       .then((jsonData: DataJson) => {
-        // Garante que jsonData é do tipo DataJson
         setData(jsonData);
       })
       .catch((err) => console.error('Erro ao carregar data.json', err));
@@ -44,8 +44,7 @@ function App() {
   };
 
   /**
-   * Filtra um array (ExperienceType[] | ProjectType[] | CertificationType[]) 
-   * com base na `filterTag`, preservando o tipo dos itens.
+   * Filtra um array baseado na `filterTag`, preservando o tipo dos itens.
    */
   function filterByTag<T extends { tags: string[] }>(items: T[]): T[] {
     if (!filterTag) return items; // Se não há filtro, retorna tudo
@@ -56,20 +55,22 @@ function App() {
     return <div className="loading">Carregando...</div>;
   }
 
-  // Desestrutura os campos de data, que agora tem tipo `DataJson`
+  // Desestrutura os campos de data, que agora têm tipo `DataJson`
   const { info, experiences, certifications, projects } = data;
 
   // Aplica o filtro
   const filteredExperiences: ExperienceType[] = filterByTag(experiences);
-  const filteredCertifications: CertificationType[] = filterByTag(certifications);
+  const filteredCertifications: CertificationType[] =
+    filterByTag(certifications);
   const filteredProjects: ProjectType[] = filterByTag(projects);
 
   return (
     <div className="App">
       <Helmet>
         <meta charSet="UTF-8" />
-        {/* Se data.info.name existir, adicionamos no título. Senão, fallback */}
+        {/* Define o título da aba com base no nome */}
         <title>{info.name ? `${info.name} Resume` : 'Resume'}</title>
+        {/* Define o favicon */}
         <link
           rel="icon"
           type="image/png"
@@ -79,36 +80,20 @@ function App() {
         {/* Outras meta tags podem ser adicionadas aqui conforme necessário */}
       </Helmet>
 
-      <header>
-        {/* Passa info (do tipo Info) e currentLanguage ('en' | 'pt') para o Header */}
-        <Header info={info} language={currentLanguage} />
+      {/* Navbar */}
+      <Navbar
+        currentLanguage={currentLanguage}
+        toggleLanguage={toggleLanguage}
+        setFilterTag={setFilterTag}
+      />
 
-        <button onClick={toggleLanguage} style={{ marginLeft: '1rem' }}>
-          {currentLanguage === 'en' ? 'PT' : 'EN'}
-        </button>
-
-        {/* Botões de filtro */}
-        <div style={{ marginTop: '1rem' }}>
-          <button onClick={() => setFilterTag('data-engineer')}>
-            {currentLanguage === 'en' ? 'Data Engineer' : 'Engenheiro de Dados'}
-          </button>
-
-          <button onClick={() => setFilterTag('software-engineer')} style={{ marginLeft: '0.5rem' }}>
-            {currentLanguage === 'en' ? 'Software Engineer' : 'Engenheiro de Software'}
-          </button>
-
-          <button onClick={() => setFilterTag(null)} style={{ marginLeft: '0.5rem' }}>
-            {currentLanguage === 'en' ? 'Show All' : 'Mostrar Todos'}
-          </button>
-        </div>
-      </header>
+      {/* Header */}
+      <Header info={info} language={currentLanguage} />
 
       <main>
         {/* EXPERIENCES */}
         <section>
-          <h2>
-            {currentLanguage === 'en' ? 'Experiences' : 'Experiências'}
-          </h2>
+          <h2>{currentLanguage === 'en' ? 'Experiences' : 'Experiências'}</h2>
           {filteredExperiences.map((exp, index) => (
             <Experience
               key={index}
@@ -122,11 +107,7 @@ function App() {
         <section>
           <h2>{currentLanguage === 'en' ? 'Projects' : 'Projetos'}</h2>
           {filteredProjects.map((proj, index) => (
-            <Project
-              key={index}
-              project={proj}
-              language={currentLanguage}
-            />
+            <Project key={index} project={proj} language={currentLanguage} />
           ))}
         </section>
 
