@@ -7,6 +7,7 @@ import html2pdf from 'html2pdf.js';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Experience from './components/Experience';
+import Education from './components/Education';
 import Project from './components/Project';
 import Certification from './components/Certification';
 
@@ -52,7 +53,7 @@ function App() {
     return <div className="loading">Carregando...</div>;
   }
 
-  const { info, experiences, certifications, projects } = data;
+  const { info, experiences, educations, certifications, projects } = data;
 
   const filteredExperiences: ExperienceType[] = filterByTag(experiences);
   const filteredCertifications: CertificationType[] =
@@ -125,6 +126,14 @@ function App() {
               experience={exp}
               language={currentLanguage}
             />
+          ))}
+        </section>
+
+        {/* Education */}
+        <section>
+          <h2>{currentLanguage === 'en' ? 'Education' : 'Educação'}</h2>
+          {educations.map((edu, index) => (
+            <Education key={index} education={edu} language={currentLanguage} />
           ))}
         </section>
 

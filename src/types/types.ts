@@ -41,9 +41,9 @@ export interface ExperienceType {
   logoUrl: string; // ex: "tractian.png"
   role: I18nString; // ex: { en: "Analytics Engineer", pt: "Engenheiro(a)..." }
   employmentType: I18nString;
-  startDate: I18nString;
-  endDate: I18nString;
-  duration: I18nString;
+  startDate: string;
+  endDate: string;
+  current: boolean;
   location: I18nString;
   /**
    * Lista de descrições (cada item é um objeto com { en, pt }).
@@ -57,6 +57,16 @@ export interface ExperienceType {
    * Tags usadas para filtrar (ex.: "data-engineer", "software-engineer", etc.)
    */
   tags: string[];
+}
+
+export interface EducationType {
+  course: I18nString;
+  kind: I18nString;
+  company: string;
+  logoUrl: string;
+  startDate: string;
+  endDate: string;
+  current: boolean;
 }
 
 /**
@@ -85,4 +95,5 @@ export interface DataJson {
   experiences: ExperienceType[];
   certifications: CertificationType[];
   projects: ProjectType[];
+  educations: EducationType[];
 }

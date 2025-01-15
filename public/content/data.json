@@ -26,18 +26,9 @@
         "en": "Full-time",
         "pt": "Tempo integral"
       },
-      "startDate": {
-        "en": "Oct 2024",
-        "pt": "out de 2024"
-      },
-      "endDate": {
-        "en": "Present",
-        "pt": "o momento"
-      },
-      "duration": {
-        "en": "4 months",
-        "pt": "4 meses"
-      },
+      "startDate": "2024-10-01",
+      "endDate": "",
+      "current": true,
       "location": {
         "en": "Indianópolis, São Paulo, Brazil · Remote",
         "pt": "Indianópolis, São Paulo, São Paulo, Brasil · Remota"
@@ -48,7 +39,9 @@
           "pt": "Competências: Análise de dados · Engenharia de dados"
         }
       ],
-      "tags": ["data-engineer"]
+      "tags": [
+        "data-engineer"
+      ]
     },
     {
       "companyName": "Ministério da Saúde",
@@ -61,18 +54,9 @@
         "en": "Temporary",
         "pt": "Temporário"
       },
-      "startDate": {
-        "en": "Jan 2024",
-        "pt": "jan de 2024"
-      },
-      "endDate": {
-        "en": "Present",
-        "pt": "o momento"
-      },
-      "duration": {
-        "en": "1 year 1 month",
-        "pt": "1 ano 1 mês"
-      },
+      "startDate": "2024-01-01",
+      "endDate": "",
+      "current": true,
       "location": {
         "en": "Brasília, Federal District, Brazil · Remote",
         "pt": "Brasília, Distrito Federal, Brasil · Remota"
@@ -89,9 +73,35 @@
         {
           "en": "Backend implementation with Fastify in a NodeJS environment",
           "pt": "Implementação de backend com Fastify em ambiente NodeJS"
+        },
+        {
+          "en": "Participation in requirements elicitation and translation into software specifications",
+          "pt": "Participação na elicitação de requisitos e tradução em especificações de software"
+        },
+        {
+          "en": "Development of data pipelines and integration with PostgreSQL, DuckDB, and AWS",
+          "pt": "Desenvolvimento de pipelines de dados e integração com PostgreSQL, DuckDB e AWS"
+        },
+        {
+          "en": "DevOps practices for automating the software lifecycle (Gitlab)",
+          "pt": "Práticas DevOps para automação do ciclo de vida do software (Gitlab)"
+        },
+        {
+          "en": "Configuration and management of PostgreSQL databases in AWS",
+          "pt": "Configuração e gestão de bases de dados PostgreSQL em AWS"
+        },
+        {
+          "en": "Collaboration with multidisciplinary teams to ensure data security",
+          "pt": "Colaboração com equipes multidisciplinares para garantir a segurança dos dados"
+        },
+        {
+          "en": "Development of reporting systems and real-time control dashboards",
+          "pt": "Desenvolvimento de sistemas de relatórios e painéis de controle em tempo real"
         }
       ],
-      "tags": ["software-engineer"]
+      "tags": [
+        "software-engineer"
+      ]
     },
     {
       "companyName": "A3Data",
@@ -104,18 +114,9 @@
         "en": "Full-time",
         "pt": "Tempo integral"
       },
-      "startDate": {
-        "en": "Nov 2023",
-        "pt": "nov de 2023"
-      },
-      "endDate": {
-        "en": "Oct 2024",
-        "pt": "out de 2024"
-      },
-      "duration": {
-        "en": "1 year",
-        "pt": "1 ano"
-      },
+      "startDate": "2023-11-01",
+      "endDate": "2024-10-01",
+      "current": false,
       "location": {
         "en": "Belo Horizonte, Minas Gerais, Brazil · Remote",
         "pt": "Belo Horizonte, Minas Gerais, Brasil · Remota"
@@ -126,11 +127,65 @@
           "pt": "Desenvolvimento de scripts Terraform para serviços AWS e Kubernetes"
         },
         {
-          "en": "Data pipelines with Airflow and Glue Workflows",
-          "pt": "Pipelines de dados com Airflow e Glue Workflows"
+          "en": "Creation and implementation of data architectures",
+          "pt": "Criação e implementação de arquiteturas de dados"
+        },
+        {
+          "en": "Development of data pipelines (Airflow and Glue Workflows)",
+          "pt": "Desenvolvimento de pipelines de dados (Airflow e Glue Workflows)"
+        },
+        {
+          "en": "Implementation of cloud computing solutions (AWS, GCP)",
+          "pt": "Implementação de soluções de computação em nuvem (AWS, GCP)"
+        },
+        {
+          "en": "SQL, Shell Script, Python, Spark",
+          "pt": "SQL, Shell Script, Python, Spark"
+        },
+        {
+          "en": "SQL and NoSQL databases (RDS, S3, Redshift, Athena, BigQuery)",
+          "pt": "Bancos de dados SQL e NoSQL (RDS, S3, Redshift, Athena, BigQuery)"
+        },
+        {
+          "en": "SQL database modeling and architecture",
+          "pt": "Modelagem e arquitetura de banco de dados SQL"
+        },
+        {
+          "en": "ETL tools (PySpark, Nifi, Apache Airflow)",
+          "pt": "Ferramentas ETL (PySpark, Nifi, Apache Airflow)"
+        },
+        {
+          "en": "Implementation of Data Lake and Data Warehouse",
+          "pt": "Implementação de Data Lake e Data Warehouse"
+        },
+        {
+          "en": "Implementation of data cataloging tools (DataHub, OpenMetadata, Glue)",
+          "pt": "Implementação de ferramentas de catalogação de dados (DataHub, OpenMetadata, Glue)"
+        },
+        {
+          "en": "Implementation of data quality tools (Great Expectations, SODA)",
+          "pt": "Implementação de ferramentas de qualidade de dados (Great Expectations, SODA)"
+        },
+        {
+          "en": "Focus on data governance",
+          "pt": "Foco em governança de dados"
+        },
+        {
+          "en": "CI/CD (Github, Gitlab, and Codecommit)",
+          "pt": "CI/CD (Github, Gitlab e Codecommit)"
+        },
+        {
+          "en": "Optimization of costs, pipelines, and data processing",
+          "pt": "Otimização de custos, pipelines e processamento de dados"
+        },
+        {
+          "en": "Migration of architectures to Kubernetes and Helm",
+          "pt": "Migração de arquiteturas para Kubernetes e Helm"
         }
       ],
-      "tags": ["data-engineer"]
+      "tags": [
+        "data-engineer"
+      ]
     },
     {
       "companyName": "Embraer",
@@ -141,35 +196,234 @@
       },
       "employmentType": {
         "en": "Internship",
-        "pt": "Estágio"
+        "pt": "estágio"
       },
-      "startDate": {
-        "en": "Nov 2021",
-        "pt": "nov de 2021"
-      },
-      "endDate": {
-        "en": "Jul 2023",
-        "pt": "jul de 2023"
-      },
-      "duration": {
-        "en": "1 year 9 months",
-        "pt": "1 ano 9 meses"
-      },
+      "startDate": "2021-11-01",
+      "endDate": "2023-07-01",
+      "current": false,
       "location": {
         "en": "São José dos Campos, São Paulo, Brazil",
         "pt": "São José dos Campos, São Paulo, Brasil"
       },
       "description": [
         {
-          "en": "Power BI capacity administrator",
+          "en": "Development of the Data Ecosystem Project",
+          "pt": "Desenvolvimento do Projeto Data Ecosystem"
+        },
+        {
+          "en": "Implementation of Cloud Computing solutions (AWS, GCP)",
+          "pt": "Implementação em soluções de Cloud Computing (AWS, GCP)"
+        },
+        {
+          "en": "Proficient in SQL, Shell Script, Python, Spark",
+          "pt": "SQL, Shell Script, Python, Spark"
+        },
+        {
+          "en": "Experience with SQL and NoSQL databases (SQL Server, Oracle, Google Cloud Databases, SAP)",
+          "pt": "Bases de dados SQL e NoSQL (SQL Server, Oracle, Bancos de dados do Google Cloud, SAP)"
+        },
+        {
+          "en": "Modeling and Architecture of SQL databases",
+          "pt": "Modelagem e Arquitetura de bancos de dados SQL"
+        },
+        {
+          "en": "ETL Tools expertise (SAP AecorSoft Data Integrator, PySpark, Nifi, Apache Airflow)",
+          "pt": "Ferramentas ETL (SAP AecorSoft Data Integrator, PySpark, Nifi, Apache Airflow)"
+        },
+        {
+          "en": "Data Ingestion and organization of Data Zones",
+          "pt": "Ingestão e organização de Zonas de Dados"
+        },
+        {
+          "en": "Construction of Analytical Dashboards in PowerBI",
+          "pt": "Construção de Dashboards Analíticos no PowerBI"
+        },
+        {
+          "en": "Administration of PowerBI capacity",
+          "pt": "Administração da capacidade PowerBI"
+        },
+        {
+          "en": "DevOps practices and implementation",
+          "pt": "DevOps"
+        }
+      ],
+      "tags": [
+        "software-engineer"
+      ]
+    },
+    {
+      "companyName": "Universidade de Brasília",
+      "logoUrl": "embraer.png",
+      "role": {
+        "en": "Software Engineer",
+        "pt": "Engenheiro de software"
+      },
+      "employmentType": {
+        "en": "Internship",
+        "pt": "estágio"
+      },
+      "startDate": "2021-11-01",
+      "endDate": "2023-07-01",
+      "current": false,
+      "location": {
+        "en": "São José dos Campos, São Paulo, Brazil",
+        "pt": "São José dos Campos, São Paulo, Brasil"
+      },
+      "description": [
+        {
+          "en": "Administrator of Power BI capacity",
           "pt": "Administrador da capacidade do Power BI"
         },
         {
-          "en": "Dashboard creation in PowerBI",
-          "pt": "Criação de dashboards no PowerBI"
+          "en": "Created dashboards and dataflows in PowerBI",
+          "pt": "Criava dashboards e dataflows no PowerBI"
+        },
+        {
+          "en": "Analyzed data from IT teams (Service, Quality, Delivery, Costs and )",
+          "pt": "Analisava os dados das equipes de TI (Serviço, Qualidade, Delivery, Custos e )"
+        },
+        {
+          "en": "Analyzed software requirements",
+          "pt": "Analisava os requisitos de software"
+        },
+        {
+          "en": "Managed relational and non-relational data",
+          "pt": "Fazia o controle de dados relacionais e não-relacionais"
+        },
+        {
+          "en": "Automated tasks, KPIs, spreadsheets, websites, and management systems",
+          "pt": "Automatizava tarefas, KPIs, planilhas, websites e sistemas de gerenciamento"
+        },
+        {
+          "en": "Provided internal support to clients through communication between development teams and responsible areas",
+          "pt": "Fazia suporte interno aos clientes através da comunicação entre os times de desenvolvimento e as áreas responsáveis"
         }
       ],
-      "tags": ["software-engineer"]
+      "tags": [
+        "software-engineer"
+      ]
+    },
+    {
+          "companyName": "Polícia Civil do Estado de Goiás",
+          "logoUrl": "pc-go.png",
+          "role": {
+            "en": "Software Engineer",
+            "pt": "Engenheiro de Software"
+          },
+          "employmentType": {
+            "en": "Temporary",
+            "pt": "Temporário"
+          },
+          "startDate": "2023-03-01",
+          "endDate": "2023-07-01",
+          "current": false,
+          "location": {
+            "en": "Brasília, Federal District, Brazil · Remote",
+            "pt": "Brasília, Distrito Federal, Brasil · Remota"
+          },
+          "description": [
+            {
+              "en": "Developed the Schedula project using agile methodologies such as Lean Inception and Scrum, collaborating with clients to gather system requirements and validate results.",
+              "pt": "Desenvolvedor do projeto Schedula, utilizando metodologias ágeis como Lean Inception e Scrum, além de trabalhar com os requisitos do sistema com os clientes e validação dos resultados."
+            },
+            {
+              "en": "Conducted training sessions for software development methods students on Git/Github, Docker, and Front-end/Back-end development.",
+              "pt": "Desenvolvi treinamentos dos estudantes de Métodos em desenvolvimento de software sobre Git/Github, Docker e Front-end/Back-end."
+            },
+            {
+              "en": "Skills: Communication, Docker, CI/CD, Typescript, React, NestJS, Agile Methodologies, Software Requirements, Heroku, PostgreSQL",
+              "pt": "Competências: Comunicação, Docker, CI/CD, Typescript, React, Nestjs, Metodologias ágeis, Requisitos de software, Heroku, PostgreSQL"
+            },
+            {
+              "en": "Developed microservices for location management, call management, and tutorial management.",
+              "pt": "Microsserviço de gestão de localidades, Microsserviço de gestão dos chamados, Microsserviço de gestão de tutoriais"
+            }
+          ],
+          "tags": ["software-engineer", "agile", "training", "microservices"]
+    },
+    {
+      "companyName": "Tribunal de Contas da União",
+      "logoUrl": "tcu.png",
+      "role": {
+        "en": "Software Engineer",
+        "pt": "Engenheiro de Software"
+      },
+      "employmentType": {
+        "en": "Internship",
+        "pt": "Estágio"
+      },
+      "startDate": "2021-01-01",
+      "endDate": "2021-10-01",
+      "current": false,
+      "location": {
+        "en": "Brasília, Federal District, Brazil",
+        "pt": "Brasília, Distrito Federal, Brasil"
+      },
+      "description": [
+        {
+          "en": "Managed the Oracle database, ensuring data integrity and performance.",
+          "pt": "Gerenciava o banco de dados Oracle"
+        },
+        {
+          "en": "Developed and managed all Oracle APEX pages utilized by the database.",
+          "pt": "Desenvolvia e gerenciava todas as páginas Oracle APEX utilizadas pelo banco de dados."
+        },
+        {
+          "en": "Improved code to enhance system availability and performance.",
+          "pt": "Melhorava o código para melhoria da disponibilidade do sistema."
+        },
+        {
+          "en": "Made front-end modifications to improve the UI interface.",
+          "pt": "Fazia modificações no front-end para melhoria da interface UI."
+        },
+        {
+          "en": "Optimized database relationships for better efficiency.",
+          "pt": "Otimizava as relações do banco de dados."
+        },
+        {
+          "en": "Fixed and developed JavaScript code to add new functionalities.",
+          "pt": "Corrigia e desenvolvia códigos em JavaScript."
+        },
+        {
+          "en": "Skills: Node.js, Leadership, React.js, Microsoft Word, Collaborative Problem-Solving, Programming, Microsoft PowerPoint, Front-end Development, Scrum, SQL, Communication, Analytical Capability, Software Development, JavaScript, Databases, PL/SQL, Problem Solving, Programming Languages",
+          "pt": "Competências: Node.js, Liderança, React.js, Microsoft Word, Resolução colaborativa de problemas, Programação (computação), Microsoft PowerPoint, Desenvolvimento de front-end, Scrum, SQL, Comunicação, Analytical Capability, Desenvolvimento de software, JavaScript, Banco de dados, PL/SQL, Resolução de problemas, Linguagens de programação"
+        }
+      ],
+      "tags": ["software-engineer", "internship", "frontend", "database-management"]
+    },
+    {
+      "companyName": "Universidade de Brasília",
+      "logoUrl": "unb.png",
+      "role": {
+        "en": "Scientific Researcher",
+        "pt": "Pesquisador Científico"
+      },
+      "employmentType": {
+        "en": "Temporary",
+        "pt": "Temporário"
+      },
+      "startDate": "2020-08-01",
+      "endDate": "2021-01-01",
+      "current": false,
+      "location": {
+        "en": "Brasília, Federal District, Brazil",
+        "pt": "Brasília, Distrito Federal, Brasil"
+      },
+      "description": [
+        {
+          "en": "Developed and researched predictive models using convolutional neural networks and deep learning to detect road lanes and predict optimal paths.",
+          "pt": "Desenvolvia e pesquisava modelos preditivos utilizados por câmeras para detectar faixas na estrada utilizando redes neurais convolucionais e aprendizagem profunda para tentar prever qual caminho seguir."
+        },
+        {
+          "en": "Mined and analyzed data, applying solutions developed through the CARLA software.",
+          "pt": "Minerava dados, os analisava e aplicava as soluções desenvolvidas por meio do software CARLA."
+        },
+        {
+          "en": "Skills: GitHub, TensorFlow, C++, Data Science, LaTeX, Programming, Deep Learning, Computer Vision, Git, Machine Learning, Data Analysis, Python, English, Communication, Linux, Artificial Intelligence, Programming Languages",
+          "pt": "Competências: GitHub, TensorFlow, C++, Ciência de dados, LaTeX, Programação (computação), Aprendizagem profunda, Visão computacional, Git, Aprendizado de máquina, Análise de dados, Python, Inglês, Comunicação, Linux, Inteligência artificial, Linguagens de programação"
+        }
+      ],
+      "tags": ["scientific-researcher", "machine-learning", "data-science"]
     }
   ],
   "certifications": [
@@ -182,18 +436,36 @@
         "en": "Amazon Web Services (AWS)",
         "pt": "Amazon Web Services (AWS)"
       },
-      "tags": ["data-engineer", "software-engineer"]
+      "tags": [
+        "data-engineer",
+        "software-engineer"
+      ]
     },
     {
       "name": {
-        "en": "Google Data Analytics Professional Certificate",
-        "pt": "Certificado Profissional de Análise de Dados do Google"
+        "en": "Professional Data Engineer Certification",
+        "pt": "Certificado Profissional de Engenheiro de dados"
       },
       "issuer": {
-        "en": "Coursera",
-        "pt": "Coursera"
+        "en": "Google Cloud",
+        "pt": "Google Cloud"
       },
-      "tags": ["data-engineer"]
+      "tags": [
+        "data-engineer"
+      ]
+    },
+    {
+      "name": {
+        "en": "Certification for Apache Airflow",
+        "pt": "Certificado de Apache Airflow"
+      },
+      "issuer": {
+        "en": "Astronomer",
+        "pt": "Astronomer"
+      },
+      "tags": [
+        "data-engineer"
+      ]
     }
   ],
   "projects": [
@@ -206,7 +478,9 @@
         "en": "Data architecture, AWS cloud solutions, Terraform, GitLab CI/CD",
         "pt": "Arquitetura de dados, soluções em nuvem AWS, Terraform, GitLab CI/CD"
       },
-      "tags": ["data-engineer"]
+      "tags": [
+        "data-engineer"
+      ]
     },
     {
       "title": {
@@ -217,7 +491,41 @@
         "en": "Implementation of strategic management support platform with NodeJS, VueJS",
         "pt": "Implementação de plataforma de apoio à gestão estratégica com NodeJS, VueJS"
       },
-      "tags": ["software-engineer"]
+      "tags": [
+        "software-engineer"
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "course": {
+        "en": "Software Engineering",
+        "pt":  "Engenheiro de Software"
+      },
+      "kind": {
+        "en": "Bachelor",
+        "pt":  "Bacharelado"
+      },
+      "company": "Universidade de Brasília",
+      "logoUrl": "unb.png",
+      "startDate": "2018-08-01",
+      "endDate": "2023-12-01",
+      "current": false
+    },
+    {
+      "course": {
+        "en": "Applied computing",
+        "pt":  "Computação aplicada"
+      },
+      "kind": {
+        "en": "Master",
+        "pt":  "Mestrado"
+      },
+      "company": "Universidade de Brasília",
+      "logoUrl": "unb.png",
+      "startDate": "2024-12-01",
+      "endDate": "",
+      "current": true
     }
   ]
 }

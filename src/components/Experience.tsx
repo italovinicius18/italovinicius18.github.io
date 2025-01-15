@@ -16,11 +16,25 @@ const Experience: React.FC<ExperienceProps> = ({ experience, language }) => {
     employmentType,
     startDate,
     endDate,
-    duration,
+    current,
     location,
     description,
     tags,
   } = experience;
+
+  // Format startDate and endDate as locale monthName-year
+
+  const startDateString = new Date(startDate).toLocaleDateString(language, {
+    month: 'long',
+    year: 'numeric',
+  });
+
+  const endDateString = !current
+    ? new Date(endDate).toLocaleDateString(language, {
+        month: 'long',
+        year: 'numeric',
+      })
+    : '';
 
   return (
     <div className="experience">
@@ -28,7 +42,7 @@ const Experience: React.FC<ExperienceProps> = ({ experience, language }) => {
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
         {logoUrl && (
           <img
-            src={`content/${logoUrl}`}
+            src={`content/images/${logoUrl}`}
             alt={companyName}
             style={{ width: '50px', height: '50px', objectFit: 'contain' }}
           />
@@ -41,7 +55,8 @@ const Experience: React.FC<ExperienceProps> = ({ experience, language }) => {
 
       <p>{employmentType[language]}</p>
       <p>
-        {startDate[language]} - {endDate[language]} · {duration[language]}
+        {startDateString} -{' '}
+        {current ? (language === 'en' ? 'Current' : 'Atual') : endDateString}
       </p>
       <p>{location[language]}</p>
 
