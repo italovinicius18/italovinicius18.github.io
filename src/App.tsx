@@ -1,7 +1,8 @@
 // src/App.tsx
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { Helmet } from 'react-helmet-async';
+import html2pdf from 'html2pdf.js';
 
 import Navbar from './components/Navbar';
 import Header from './components/Header';
@@ -13,21 +14,18 @@ import type {
   DataJson,
   CertificationType,
   ExperienceType,
-  ProjectType,
+  ProjectType
 } from './types';
 
 import './styles.css';
 
 function App() {
-  // Tipagem do estado `data` como `DataJson | null`
   const [data, setData] = useState<DataJson | null>(null);
-
-  // Tipagem do estado `currentLanguage` como 'en' | 'pt'
   const [currentLanguage, setCurrentLanguage] = useState<'en' | 'pt'>('en');
-
-  // Tipagem de `filterTag` como string ou null
   const [filterTag, setFilterTag] = useState<string | null>(null);
-  // "data-engineer", "software-engineer" ou null
+  
+  // Referência ao conteúdo principal para impressão
+  const printRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch('/content/data.json')
@@ -38,7 +36,6 @@ function App() {
       .catch((err) => console.error('Erro ao carregar data.json', err));
   }, []);
 
-  // Alterna idioma
   const toggleLanguage = () => {
     setCurrentLanguage((prev) => (prev === 'en' ? 'pt' : 'en'));
   };
@@ -55,29 +52,54 @@ function App() {
     return <div className="loading">Carregando...</div>;
   }
 
-  // Desestrutura os campos de data, que agora têm tipo `DataJson`
   const { info, experiences, certifications, projects } = data;
 
-  // Aplica o filtro
   const filteredExperiences: ExperienceType[] = filterByTag(experiences);
-  const filteredCertifications: CertificationType[] =
-    filterByTag(certifications);
+  const filteredCertifications: CertificationType[] = filterByTag(certifications);
   const filteredProjects: ProjectType[] = filterByTag(projects);
+
+  /**
+   * Função para imprimir o conteúdo da página excluindo a Navbar.
+   */
+  const handlePrint = () => {
+    if (printRef.current) {
+      const element = printRef.current;
+      
+      // Definir as opções do html2pdf
+      const opt = {
+        margin:       [10, 10, 10, 10], // top, left, bottom, right em mm
+        filename:     getFilename(),
+        image:        { type: 'jpeg', quality: 1 },
+        html2canvas:  { scale: 3, useCORS: true }, // Aumentar a escala para melhor qualidade
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] } // Evitar quebras de página dentro de elementos
+      };
+      
+      // Gerar o PDF
+      html2pdf().set(opt).from(element).save();
+    }
+  };
+
+  /**
+   * Função para gerar o nome do arquivo baseado no filtro e idioma.
+   */
+  const getFilename = (): string => {
+    const tag = filterTag ? filterTag : 'all';
+    const lang = currentLanguage.toUpperCase();
+    return `CV-${tag}-${lang}.pdf`;
+  };
 
   return (
     <div className="App">
       <Helmet>
         <meta charSet="UTF-8" />
-        {/* Define o título da aba com base no nome */}
         <title>{info.name ? `${info.name} Resume` : 'Resume'}</title>
-        {/* Define o favicon */}
         <link
           rel="icon"
           type="image/png"
           href={info.logo ? `content/${info.logo}` : 'favicon.ico'}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/* Outras meta tags podem ser adicionadas aqui conforme necessário */}
       </Helmet>
 
       {/* Navbar */}
@@ -85,15 +107,20 @@ function App() {
         currentLanguage={currentLanguage}
         toggleLanguage={toggleLanguage}
         setFilterTag={setFilterTag}
+        handlePrint={handlePrint} // Passando a função de impressão
+        filterTag={filterTag} // Passando o filtro atual para exibir na Navbar
       />
 
-      {/* Header */}
-      <Header info={info} language={currentLanguage} />
+      <main ref={printRef}>
 
-      <main>
+        {/* Header */}
+        <Header info={info} language={currentLanguage} />
+
         {/* EXPERIENCES */}
         <section>
-          <h2>{currentLanguage === 'en' ? 'Experiences' : 'Experiências'}</h2>
+          <h2>
+            {currentLanguage === 'en' ? 'Experiences' : 'Experiências'}
+          </h2>
           {filteredExperiences.map((exp, index) => (
             <Experience
               key={index}
@@ -107,7 +134,11 @@ function App() {
         <section>
           <h2>{currentLanguage === 'en' ? 'Projects' : 'Projetos'}</h2>
           {filteredProjects.map((proj, index) => (
-            <Project key={index} project={proj} language={currentLanguage} />
+            <Project
+              key={index}
+              project={proj}
+              language={currentLanguage}
+            />
           ))}
         </section>
 
