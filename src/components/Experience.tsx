@@ -19,7 +19,7 @@ const Experience: React.FC<ExperienceProps> = ({ experience, language }) => {
     duration,
     location,
     description,
-    tags
+    tags,
   } = experience;
 
   return (
@@ -34,12 +34,8 @@ const Experience: React.FC<ExperienceProps> = ({ experience, language }) => {
           />
         )}
         <div>
-          <h4 style={{ margin: 0 }}>
-            {role[language]}
-          </h4>
-          <h5 style={{ margin: 0 }}>
-            {companyName}
-          </h5>
+          <h4 style={{ margin: 0 }}>{role[language]}</h4>
+          <h5 style={{ margin: 0 }}>{companyName}</h5>
         </div>
       </div>
 

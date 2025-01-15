@@ -2,126 +2,128 @@
    Estilos globais
 ------------------------------ */
 :root {
-    --bg-color: #121212;
-    --text-color: #ffffff;
-    --accent-color: #00bfa5;
-    --secondary-color: #1e1e1e;
-  }
-  
-  html, body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-  }
-  
-  .App {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  
-  /* ------------------------------
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #00bfa5;
+  --secondary-color: #1e1e1e;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ------------------------------
      Header
   ------------------------------ */
-  header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2rem;
-    letter-spacing: 1px;
-  }
-  
-  header h2 {
-    margin: 0.5rem 0 1rem 0;
-    font-size: 1.2rem;
-    color: var(--accent-color);
-  }
-  
-  /* ------------------------------
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+header h2 {
+  margin: 0.5rem 0 1rem 0;
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+/* ------------------------------
      Botões
   ------------------------------ */
-  button {
-    background-color: var(--accent-color);
-    border: none;
-    padding: 0.6rem 1rem;
-    margin: 0.3rem;
-    font-size: 0.9rem;
-    color: var(--text-color);
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  button:hover {
-    opacity: 0.8;
-  }
-  
-  .filters {
-    margin-bottom: 1rem;
-  }
-  
-  .lang-btn {
-    margin-top: 1rem;
-  }
-  
-  /* ------------------------------
+button {
+  background-color: var(--accent-color);
+  border: none;
+  padding: 0.6rem 1rem;
+  margin: 0.3rem;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.filters {
+  margin-bottom: 1rem;
+}
+
+.lang-btn {
+  margin-top: 1rem;
+}
+
+/* ------------------------------
      Main / Seções
   ------------------------------ */
-  main {
-    background-color: var(--secondary-color);
-    padding: 1rem;
-    border-radius: 8px;
-  }
-  
-  section {
-    margin-bottom: 2rem;
-  }
-  
-  section h3 {
-    font-size: 1.4rem;
-    border-bottom: 1px solid #444;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* ------------------------------
+main {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h3 {
+  font-size: 1.4rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ------------------------------
      Cards de Experiência, Projeto, Certificação
   ------------------------------ */
-  .experience, .project, .certification {
-    background-color: #1e1e1e;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-  }
-  
-  .experience h4 {
-    margin: 0;
-    font-weight: 600;
-    font-size: 1.1rem;
-  }
-  
-  .experience p,
-  .project p,
-  .certification p {
-    margin: 0.5rem 0 0 0;
-  }
-  
-  /* ------------------------------
+.experience,
+.project,
+.certification {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.experience h4 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.experience p,
+.project p,
+.certification p {
+  margin: 0.5rem 0 0 0;
+}
+
+/* ------------------------------
      Loading
   ------------------------------ */
-  .loading {
-    text-align: center;
-    padding: 2rem;
-    font-size: 1rem;
-    color: var(--accent-color);
-  }
-  
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  color: var(--accent-color);
+}
 
-  /* styles.css */
+/* styles.css */
 
 /* Estilos para o Header */
 .header {
@@ -190,4 +192,67 @@
 
 .header .filter-buttons button:hover {
   background-color: #009e93;
+}
+
+/* styles.css */
+
+/* Estilos para a Navbar */
+.navbar {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky; /* Fixa a Navbar no topo */
+  top: 0;
+  z-index: 1000; /* Garante que a Navbar fique acima de outros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.language-button,
+.filter-button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: #00bfa5;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.language-button:hover,
+.filter-button:hover {
+  background-color: #009e93;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-buttons {
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .language-button,
+  .filter-button {
+    margin-left: 0;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
 }

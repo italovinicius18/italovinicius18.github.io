@@ -17,17 +17,25 @@ const Header: React.FC<HeaderProps> = ({ info, language }) => {
       <p className="header-subtitle">{title[language]}</p>
       <p className="header-location">{location[language]}</p>
       <p className="header-contact">
-        Contato: 
-        {' '}
         <a href={`mailto:${email}`} className="header-link">
-          {email}
+          Mail
         </a>
         {' • '}
-        <a href={`https://${linkedin}`} className="header-link" target="_blank" rel="noopener noreferrer">
+        <a
+          href={`https://${linkedin}`}
+          className="header-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           LinkedIn
         </a>
         {' • '}
-        <a href={`https://${github}`} className="header-link" target="_blank" rel="noopener noreferrer">
+        <a
+          href={`https://${github}`}
+          className="header-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           GitHub
         </a>
       </p>

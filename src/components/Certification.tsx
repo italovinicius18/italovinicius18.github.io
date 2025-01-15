@@ -8,7 +8,10 @@ interface CertificationProps {
   language: 'en' | 'pt';
 }
 
-const Certification: React.FC<CertificationProps> = ({ certification, language }) => {
+const Certification: React.FC<CertificationProps> = ({
+  certification,
+  language,
+}) => {
   const { name, issuer, tags } = certification;
 
   return (
