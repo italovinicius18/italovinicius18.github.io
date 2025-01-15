@@ -257,7 +257,6 @@ section h3 {
   }
 }
 
-
 /* styles.css */
 
 /* ... estilos anteriores ... */
@@ -293,25 +292,40 @@ section h3 {
 /* Estilos específicos para impressão */
 @media print {
   /* Ocultar elementos que não devem aparecer na impressão */
-  .navbar, .navbar-hamburger, .print-button {
+  .navbar,
+  .navbar-hamburger,
+  .print-button {
     display: none !important;
   }
 
   /* Ajustar o padding e margens para maximizar o uso do espaço na página */
-  body, main, header, section {
+  body,
+  main,
+  header,
+  section {
     margin: 0;
     padding: 10mm;
   }
 
   /* Garantir que os elementos não excedam a largura da página */
-  .header, .experience, .project, .certification {
+  .header,
+  .experience,
+  .project,
+  .certification {
     width: 100%;
     box-shadow: none; /* Remover sombras que não aparecem bem no PDF */
     border: none; /* Remover bordas, se houver */
   }
 
   /* Controlar a quebra de palavras */
-  p, h1, h2, h3, h4, h5, h6, li {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li {
     orphans: 3;
     widows: 3;
     page-break-inside: avoid;

@@ -10,7 +10,12 @@ interface NavbarProps {
   filterTag: string | null; // Para exibir o filtro atual, se necessário
 }
 
-const Navbar: React.FC<NavbarProps> = ({ currentLanguage, toggleLanguage, setFilterTag, handlePrint, filterTag }) => {
+const Navbar: React.FC<NavbarProps> = ({
+  currentLanguage,
+  toggleLanguage,
+  setFilterTag,
+  handlePrint,
+}) => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const handleMenuToggle = () => {
@@ -27,7 +32,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentLanguage, toggleLanguage, setFil
       <div className="navbar-logo">
         <h2>{currentLanguage === 'en' ? 'Currículo' : 'Resume'}</h2>
       </div>
-      
+
       <div className={`navbar-buttons ${isMenuOpen ? 'active' : ''}`}>
         {/* Botão de Alternância de Idioma */}
         <button onClick={toggleLanguage} className="language-button">
@@ -35,11 +40,19 @@ const Navbar: React.FC<NavbarProps> = ({ currentLanguage, toggleLanguage, setFil
         </button>
 
         {/* Botões de Filtro */}
-        <button onClick={() => handleFilter('data-engineer')} className="filter-button">
+        <button
+          onClick={() => handleFilter('data-engineer')}
+          className="filter-button"
+        >
           {currentLanguage === 'en' ? 'Data Engineer' : 'Engenheiro de Dados'}
         </button>
-        <button onClick={() => handleFilter('software-engineer')} className="filter-button">
-          {currentLanguage === 'en' ? 'Software Engineer' : 'Engenheiro de Software'}
+        <button
+          onClick={() => handleFilter('software-engineer')}
+          className="filter-button"
+        >
+          {currentLanguage === 'en'
+            ? 'Software Engineer'
+            : 'Engenheiro de Software'}
         </button>
         <button onClick={() => handleFilter(null)} className="filter-button">
           {currentLanguage === 'en' ? 'Show All' : 'Mostrar Todos'}

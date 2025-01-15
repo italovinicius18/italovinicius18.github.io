@@ -14,7 +14,7 @@ import type {
   DataJson,
   CertificationType,
   ExperienceType,
-  ProjectType
+  ProjectType,
 } from './types';
 
 import './styles.css';
@@ -23,7 +23,7 @@ function App() {
   const [data, setData] = useState<DataJson | null>(null);
   const [currentLanguage, setCurrentLanguage] = useState<'en' | 'pt'>('en');
   const [filterTag, setFilterTag] = useState<string | null>(null);
-  
+
   // Referência ao conteúdo principal para impressão
   const printRef = useRef<HTMLDivElement>(null);
 
@@ -55,7 +55,8 @@ function App() {
   const { info, experiences, certifications, projects } = data;
 
   const filteredExperiences: ExperienceType[] = filterByTag(experiences);
-  const filteredCertifications: CertificationType[] = filterByTag(certifications);
+  const filteredCertifications: CertificationType[] =
+    filterByTag(certifications);
   const filteredProjects: ProjectType[] = filterByTag(projects);
 
   /**
@@ -64,17 +65,17 @@ function App() {
   const handlePrint = () => {
     if (printRef.current) {
       const element = printRef.current;
-      
+
       // Definir as opções do html2pdf
       const opt = {
-        margin:       [10, 10, 10, 10], // top, left, bottom, right em mm
-        filename:     getFilename(),
-        image:        { type: 'jpeg', quality: 1 },
-        html2canvas:  { scale: 3, useCORS: true }, // Aumentar a escala para melhor qualidade
-        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] } // Evitar quebras de página dentro de elementos
+        margin: [10, 10, 10, 10], // top, left, bottom, right em mm
+        filename: getFilename(),
+        image: { type: 'jpeg', quality: 1 },
+        html2canvas: { scale: 3, useCORS: true }, // Aumentar a escala para melhor qualidade
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }, // Evitar quebras de página dentro de elementos
       };
-      
+
       // Gerar o PDF
       html2pdf().set(opt).from(element).save();
     }
@@ -112,15 +113,12 @@ function App() {
       />
 
       <main ref={printRef}>
-
         {/* Header */}
         <Header info={info} language={currentLanguage} />
 
         {/* EXPERIENCES */}
         <section>
-          <h2>
-            {currentLanguage === 'en' ? 'Experiences' : 'Experiências'}
-          </h2>
+          <h2>{currentLanguage === 'en' ? 'Experiences' : 'Experiências'}</h2>
           {filteredExperiences.map((exp, index) => (
             <Experience
               key={index}
@@ -134,11 +132,7 @@ function App() {
         <section>
           <h2>{currentLanguage === 'en' ? 'Projects' : 'Projetos'}</h2>
           {filteredProjects.map((proj, index) => (
-            <Project
-              key={index}
-              project={proj}
-              language={currentLanguage}
-            />
+            <Project key={index} project={proj} language={currentLanguage} />
           ))}
         </section>
 
