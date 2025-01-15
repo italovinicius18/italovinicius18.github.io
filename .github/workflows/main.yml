@@ -1,51 +1,64 @@
-# Simple workflow for deploying static content to GitHub Pages
+# .github/workflows/deploy.yml
+
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Executa em pushes para a branch main
   push:
     branches: ['main']
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Permite execução manual via aba de Actions
   workflow_dispatch:
 
-# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
+# Define as permissões necessárias para o GITHUB_TOKEN
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
+# Garante que apenas um deploy está em execução por vez
 concurrency:
   group: 'pages'
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
+  # Job de deploy
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      # Passo 1: Checkout do código
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v4
+
+      # Passo 2: Setup pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
         with:
-          node-version: 20
-          cache: 'npm'
+          version: 8 # Substitua pela versão desejada
+
+      # Passo 3: Instalar dependências com pnpm
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
+
+      # Passo 4: Build do projeto
       - name: Build
-        run: npm run build
+        run: pnpm run build
+
+      # Passo 5: Configurar Pages
       - name: Setup Pages
         uses: actions/configure-pages@v4
+
+      # Passo 6: Upload do artefato para Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload dist folder
+          # Upload da pasta build (ajuste se necessário)
           path: './dist'
+
+      # Passo 7: Deploy para GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
