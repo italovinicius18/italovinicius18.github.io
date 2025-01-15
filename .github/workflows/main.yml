@@ -41,7 +41,7 @@ jobs:
 
       # Passo 3: Instalar dependências com pnpm
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
 
       # Passo 4: Build do projeto
       - name: Build
