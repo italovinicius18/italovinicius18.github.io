@@ -1,7 +1,7 @@
 // Header.tsx
 
 import React from 'react';
-import type { InfoType } from '../types';
+import type { InfoType } from '../types/types';
 
 interface HeaderProps {
   info: InfoType;

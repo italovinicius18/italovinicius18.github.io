@@ -30,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <h2>{currentLanguage === 'en' ? 'Currículo' : 'Resume'}</h2>
+        <h2>{currentLanguage === 'en' ? 'Resume' : 'Currículo'}</h2>
       </div>
 
       <div className={`navbar-buttons ${isMenuOpen ? 'active' : ''}`}>

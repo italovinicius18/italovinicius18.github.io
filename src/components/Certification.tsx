@@ -1,7 +1,7 @@
 // Certification.tsx
 
 import React from 'react';
-import type { CertificationType } from '../types';
+import type { CertificationType } from '../types/types';
 
 interface CertificationProps {
   certification: CertificationType;

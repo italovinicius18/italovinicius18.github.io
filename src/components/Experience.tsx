@@ -1,7 +1,7 @@
 // Experience.tsx
 
 import React from 'react';
-import type { ExperienceType } from '../types';
+import type { ExperienceType } from '../types/types';
 
 interface ExperienceProps {
   experience: ExperienceType;

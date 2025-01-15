@@ -1,7 +1,7 @@
 // Project.tsx
 
 import React from 'react';
-import type { ProjectType } from '../types';
+import type { ProjectType } from '../types/types';
 
 interface ProjectProps {
   project: ProjectType;

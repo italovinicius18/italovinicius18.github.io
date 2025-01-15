@@ -15,7 +15,7 @@ import type {
   CertificationType,
   ExperienceType,
   ProjectType,
-} from './types';
+} from './types/types';
 
 import './styles.css';
 
