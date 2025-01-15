@@ -38,7 +38,7 @@ const Education: React.FC<EducationProps> = ({ education, language }) => {
           />
         )}
         <div>
-          <h4 style={{ margin: 0 }}>{course[language]}</h4>
+          <h4 style={{ margin: 0 }}>{course[language]} - {kind[language]}</h4>
           <h5 style={{ margin: 0 }}>{company}</h5>
         </div>
       </div>
