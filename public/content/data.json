@@ -35,8 +35,28 @@
       },
       "description": [
         {
-          "en": "Skills: Data analysis · Data engineering",
-          "pt": "Competências: Análise de dados · Engenharia de dados"
+          "en": "Development and maintenance of data pipelines with a focus on Extract, Transform and Load (ETL/ELT) processes",
+          "pt": "Desenvolvimento e manutenção de pipelines de dados com foco em processos de Extração, Transformação e Carga (ETL/ELT)"
+        },
+        {
+          "en": "Collecting data from different sources, including PostgreSQL and MongoDB databases",
+          "pt": "Coleta de dados de diferentes fontes, incluindo bancos de dados PostgreSQL e MongoDB"
+        },
+        {
+          "en": "Handling and analyzing large volumes of data using Pandas and Polars",
+          "pt": "Manipulação e análise de grandes volumes de dados utilizando Pandas e Polars"
+        },
+        {
+          "en": "Orchestration and versioning of data flows with DBT and GitHub, ensuring traceability and governance",
+          "pt": "Orquestração e versionamento de fluxos de dados com DBT e GitHub, garantindo rastreabilidade e governança"
+        },
+        {
+          "en": "Data integration in data warehouses and Clickhouse, aiming for high-performance analysis",
+          "pt": "Integração de dados em data warehouses e Clickhouse, visando análises de alto desempenho"
+        },
+        {
+          "en": "Development of analytical dashboards in Power BI, transforming data into insights to support decision-making",
+          "pt": "Desenvolvimento de dashboards analíticos no Power BI, transformando dados em insights para apoiar a tomada de decisão"
         }
       ],
       "tags": [
@@ -306,42 +326,47 @@
       ]
     },
     {
-          "companyName": "Polícia Civil do Estado de Goiás",
-          "logoUrl": "pc-go.png",
-          "role": {
-            "en": "Software Engineer",
-            "pt": "Engenheiro de Software"
-          },
-          "employmentType": {
-            "en": "Temporary",
-            "pt": "Temporário"
-          },
-          "startDate": "2023-03-01",
-          "endDate": "2023-07-01",
-          "current": false,
-          "location": {
-            "en": "Brasília, Federal District, Brazil · Remote",
-            "pt": "Brasília, Distrito Federal, Brasil · Remota"
-          },
-          "description": [
-            {
-              "en": "Developed the Schedula project using agile methodologies such as Lean Inception and Scrum, collaborating with clients to gather system requirements and validate results.",
-              "pt": "Desenvolvedor do projeto Schedula, utilizando metodologias ágeis como Lean Inception e Scrum, além de trabalhar com os requisitos do sistema com os clientes e validação dos resultados."
-            },
-            {
-              "en": "Conducted training sessions for software development methods students on Git/Github, Docker, and Front-end/Back-end development.",
-              "pt": "Desenvolvi treinamentos dos estudantes de Métodos em desenvolvimento de software sobre Git/Github, Docker e Front-end/Back-end."
-            },
-            {
-              "en": "Skills: Communication, Docker, CI/CD, Typescript, React, NestJS, Agile Methodologies, Software Requirements, Heroku, PostgreSQL",
-              "pt": "Competências: Comunicação, Docker, CI/CD, Typescript, React, Nestjs, Metodologias ágeis, Requisitos de software, Heroku, PostgreSQL"
-            },
-            {
-              "en": "Developed microservices for location management, call management, and tutorial management.",
-              "pt": "Microsserviço de gestão de localidades, Microsserviço de gestão dos chamados, Microsserviço de gestão de tutoriais"
-            }
-          ],
-          "tags": ["software-engineer", "agile", "training", "microservices"]
+      "companyName": "Polícia Civil do Estado de Goiás",
+      "logoUrl": "pc-go.png",
+      "role": {
+        "en": "Software Engineer",
+        "pt": "Engenheiro de Software"
+      },
+      "employmentType": {
+        "en": "Temporary",
+        "pt": "Temporário"
+      },
+      "startDate": "2023-03-01",
+      "endDate": "2023-07-01",
+      "current": false,
+      "location": {
+        "en": "Brasília, Federal District, Brazil · Remote",
+        "pt": "Brasília, Distrito Federal, Brasil · Remota"
+      },
+      "description": [
+        {
+          "en": "Developed the Schedula project using agile methodologies such as Lean Inception and Scrum, collaborating with clients to gather system requirements and validate results.",
+          "pt": "Desenvolvedor do projeto Schedula, utilizando metodologias ágeis como Lean Inception e Scrum, além de trabalhar com os requisitos do sistema com os clientes e validação dos resultados."
+        },
+        {
+          "en": "Conducted training sessions for software development methods students on Git/Github, Docker, and Front-end/Back-end development.",
+          "pt": "Desenvolvi treinamentos dos estudantes de Métodos em desenvolvimento de software sobre Git/Github, Docker e Front-end/Back-end."
+        },
+        {
+          "en": "Skills: Communication, Docker, CI/CD, Typescript, React, NestJS, Agile Methodologies, Software Requirements, Heroku, PostgreSQL",
+          "pt": "Competências: Comunicação, Docker, CI/CD, Typescript, React, Nestjs, Metodologias ágeis, Requisitos de software, Heroku, PostgreSQL"
+        },
+        {
+          "en": "Developed microservices for location management, call management, and tutorial management.",
+          "pt": "Microsserviço de gestão de localidades, Microsserviço de gestão dos chamados, Microsserviço de gestão de tutoriais"
+        }
+      ],
+      "tags": [
+        "software-engineer",
+        "agile",
+        "training",
+        "microservices"
+      ]
     },
     {
       "companyName": "Tribunal de Contas da União",
@@ -391,7 +416,12 @@
           "pt": "Competências: Node.js, Liderança, React.js, Microsoft Word, Resolução colaborativa de problemas, Programação (computação), Microsoft PowerPoint, Desenvolvimento de front-end, Scrum, SQL, Comunicação, Analytical Capability, Desenvolvimento de software, JavaScript, Banco de dados, PL/SQL, Resolução de problemas, Linguagens de programação"
         }
       ],
-      "tags": ["software-engineer", "internship", "frontend", "database-management"]
+      "tags": [
+        "software-engineer",
+        "internship",
+        "frontend",
+        "database-management"
+      ]
     },
     {
       "companyName": "Universidade de Brasília",
@@ -425,7 +455,11 @@
           "pt": "Competências: GitHub, TensorFlow, C++, Ciência de dados, LaTeX, Programação (computação), Aprendizagem profunda, Visão computacional, Git, Aprendizado de máquina, Análise de dados, Python, Inglês, Comunicação, Linux, Inteligência artificial, Linguagens de programação"
         }
       ],
-      "tags": ["scientific-researcher", "machine-learning", "data-science"]
+      "tags": [
+        "scientific-researcher",
+        "machine-learning",
+        "data-science"
+      ]
     }
   ],
   "certifications": [
@@ -502,11 +536,11 @@
     {
       "course": {
         "en": "Software Engineering",
-        "pt":  "Engenheiro de Software"
+        "pt": "Engenheiro de Software"
       },
       "kind": {
         "en": "Bachelor",
-        "pt":  "Bacharelado"
+        "pt": "Bacharelado"
       },
       "company": "Universidade de Brasília",
       "logoUrl": "unb.png",
@@ -517,11 +551,11 @@
     {
       "course": {
         "en": "Applied computing",
-        "pt":  "Computação aplicada"
+        "pt": "Computação aplicada"
       },
       "kind": {
         "en": "Master",
-        "pt":  "Mestrado"
+        "pt": "Mestrado"
       },
       "company": "Universidade de Brasília",
       "logoUrl": "unb.png",
